@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cabine — channel automation for one YouTube channel</title>
+<meta name="description" content="Cabine is a personal automation tool that renders and publishes
+videos to its owner's own YouTube channel. Single user, no third-party data.">
+<style>
+  body { margin: 0; font: 17px/1.65 system-ui, sans-serif; color: #1b1b1b; background: #fbfbfa; }
+  main { max-width: 46rem; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .5rem; }
+  .sub { color: #5c5c58; margin: 0 0 2.5rem; }
+  ul { padding-left: 1.25rem; }
+  .card { background: #fff; border: 1px solid #e3e3df; border-radius: 10px; padding: 1rem 1.25rem; }
+  footer { margin-top: 3rem; color: #6f6f6b; font-size: .9rem; }
+  a { color: #1a56a8; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Cabine</h1>
+  <p class="sub">Channel automation for exactly one YouTube channel: the one that owns this app.</p>
+
+  <h2>What it does</h2>
+  <p>Cabine is a personal tool I run for my own channel. On a schedule it takes the topic list I
+  have written, renders the video files, and uploads them to my channel through the YouTube Data
+  API. It publishes nothing that I have not already scripted, and it only ever writes to the one
+  channel that authorised it.</p>
+
+  <h2>What it asks YouTube for</h2>
+  <ul class="card">
+    <li><b>youtube</b> — upload and manage videos on <em>my own</em> channel.</li>
+    <li><b>yt-analytics.readonly</b> — read <em>my own</em> view and retention numbers, so the
+        next topic list can be built from what actually worked.</li>
+  </ul>
+  <p>Cabine does not browse other people's channels, does not read other people's accounts, and
+  has no server of its own listening for anything. It is an installed application that runs on
+  scheduled machines I control, in a private repository I own.</p>
+
+  <h2>Who runs it</h2>
+  <p>One person. There is no team, no company behind it, and no other user can sign in — the OAuth
+  client exists solely to let the owner's channel talk to the owner's automation.</p>
+
+  <h2>Links</h2>
+  <p><a href="privacy.html">Privacy policy</a> — what the app stores and what it never touches.</p>
+
+  <footer>
+    Last updated 2026-11-10. This page exists to satisfy the Google OAuth verification
+    requirements for a single-user personal automation app.
+  </footer>
+</main>
+</body>
+</html>
