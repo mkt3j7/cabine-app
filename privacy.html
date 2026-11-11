@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cabine — privacy policy</title>
+<meta name="description" content="Privacy policy for Cabine, a single-user YouTube channel
+automation app. Covers the Google OAuth scopes it uses, what it stores, and how to revoke it.">
+<style>
+  body { margin: 0; font: 17px/1.65 system-ui, sans-serif; color: #1b1b1b; background: #fbfbfa; }
+  main { max-width: 46rem; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+  h1 { font-size: 1.8rem; margin: 0 0 1.5rem; }
+  h2 { font-size: 1.1rem; margin: 2rem 0 .5rem; }
+  ul { padding-left: 1.25rem; }
+  .card { background: #fff; border: 1px solid #e3e3df; border-radius: 10px; padding: 1rem 1.25rem; }
+  footer { margin-top: 3rem; color: #6f6f6b; font-size: .9rem; }
+  a { color: #1a56a8; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p>Cabine is a personal automation app that publishes videos to one YouTube channel: the
+  channel owned by the person who runs it. There are no other users, no accounts to sign up for,
+  and nobody else's data passes through it.</p>
+
+  <h2>What we request from Google</h2>
+  <ul class="card">
+    <li><b>youtube</b> (upload and manage videos) — used only against the owner's own channel.</li>
+    <li><b>yt-analytics.readonly</b> (read reports about your videos) — used only to read the
+        owner's own channel's reports.</li>
+  </ul>
+  <p>Cabine requests no other Google scopes. It does not ask for email, profile, Drive, Gmail,
+  contacts, or any non-YouTube scope.</p>
+
+  <h2>What is stored, and where</h2>
+  <ul>
+    <li>The <b>OAuth access and refresh token</b> for the owner's channel, kept as a JSON file on
+        the machines that run the automation and in that repository's encrypted secrets. It is
+        never sent to any third party and never displayed.</li>
+    <li>The <b>OAuth client secret</b>, kept in the same encrypted secrets.</li>
+    <li><b>Video files and the scripts behind them</b>, which are the owner's own content.</li>
+    <li><b>YouTube analytics numbers</b> read back by the app, kept locally and used only to pick
+        future topics for the same channel.</li>
+  </ul>
+
+  <h2>What is never collected</h2>
+  <p>No personal information about any viewer. No cookies, no tracking scripts, no analytics on
+  this web page. Nothing is sold, shared, or transferred to third parties, and no human review of
+  anyone else's content takes place.</p>
+
+  <h2>Who can see it</h2>
+  <p>Only the person who owns the channel and runs the automation. The app has no multi-user mode.</p>
+
+  <h2>How to revoke access</h2>
+  <p>At any moment, without touching this app: open
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+  find <b>Cabine</b>, and click <b>Remove access</b>. The refresh token stops working immediately.
+  Deleting the token file from the automation machines removes the last copy of it.</p>
+
+  <h2>Changes</h2>
+  <p>If the app ever asks for a new Google scope, this page is updated before that scope is used,
+  and the header below carries the date.</p>
+
+  <footer>
+    Effective 2026-11-10. Contact: the owner of the channel this app is authorised against.
+    Homepage: <a href="index.html">index.html</a>.
+  </footer>
+</main>
+</body>
+</html>
